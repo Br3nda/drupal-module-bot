@@ -1,5 +1,5 @@
 <?php
-// $Id: run_bot.php,v 1.1 2006/11/11 03:59:05 morbus Exp $
+// $Id: run_bot.php,v 1.2 2006/11/11 04:39:28 morbus Exp $
 
 /*
  * @file
@@ -62,6 +62,6 @@ $irc->disconnect(); // if we stop listening, disconnect properly.
 // and pass it off to our master bot hooks, which in turn passes
 // it off to all the enabled plugin modules via Drupal's hook system.
 class run_bot_wrapper {
-  function bot_class_irc_msg_channel(&$irc, &$data) { bot_hook_irc_msg_channel($data); }
+  function bot_class_irc_msg_channel(&$irc, &$data) { bot_invoke_irc_msg_channel($data); }
 }
 

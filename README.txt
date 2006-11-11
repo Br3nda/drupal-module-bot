@@ -1,4 +1,4 @@
-// $Id: README.txt,v 1.1 2006/11/11 03:59:05 morbus Exp $
+// $Id: README.txt,v 1.2 2006/11/11 04:39:28 morbus Exp $
 
 CONTENTS OF THIS FILE
 ---------------------
@@ -14,8 +14,8 @@ Current Maintainer: Morbus Iff <morbus@disobey.com>
 
 Druplicon is an IRC bot that has been servicing #drupal, #drupal-support,
 and many other IRC channels since 2005, proving itself an invaluable resource.
-Originally a Perl Bot::BasicBot::Pluggable application coded by Morbus, he
-always wanted to make the official #drupal bot an actual Drupal module.
+Originally a Perl Bot::BasicBot::Pluggable application coded by Morbus Iff,
+he always wanted to make the official #drupal bot an actual Drupal module.
 
 This is the fruit of these labors. Whilst the needs of Druplicon are driving
 the future and design of the module, this is intended as a generic framework

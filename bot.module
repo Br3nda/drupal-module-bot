@@ -1,5 +1,5 @@
 <?php
-// $Id: bot.module,v 1.1 2006/11/11 03:59:05 morbus Exp $
+// $Id: bot.module,v 1.2 2006/11/11 04:39:28 morbus Exp $
 
 /**
  * @file
@@ -36,15 +36,15 @@ function bot_menu($may_cache) {
       'callback arguments' => 'bot_settings',
       'description'        => t('Configure your bot framework with these settings.'),
       'path'               => 'admin/settings/bot',
-      'title'              => t('Bot framework configuration'),
-   );
+      'title'              => t('Bot framework'),
+    );
   }
 
   return $items;
 }
 
 
-function bot_hook_irc_msg_channel($data) {
+function bot_invoke_irc_msg_channel($data) {
   module_invoke_all('irc_msg_channel', $data);
 }
 
