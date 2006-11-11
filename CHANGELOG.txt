@@ -1,0 +1,4 @@
+// $Id: CHANGELOG.txt,v 1.1 2006/11/11 03:59:05 morbus Exp $
+
+2006, November:
+ * Initial proof of concept release.

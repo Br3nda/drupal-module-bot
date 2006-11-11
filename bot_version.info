@@ -1,0 +1,5 @@
+; $Id: bot_version.info,v 1.1 2006/11/11 03:59:05 morbus Exp $
+name = Bot Version
+package = Bot
+dependencies = bot
+description = A plugin that reports version numbers for various components.
