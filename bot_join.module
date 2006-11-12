@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_join.module,v 1.1 2006/11/12 17:01:25 morbus Exp $
+// $Id: bot_join.module,v 1.2 2006/11/12 23:37:52 morbus Exp $
 
 /**
  * @file
@@ -9,7 +9,7 @@
 /**
  * Implementation of hook_help().
  */
-function bot_version_help($section) {
+function bot_join_help($section) {
   switch ($section) {
     case '':
       return '';
@@ -19,7 +19,7 @@ function bot_version_help($section) {
 /**
  * Implementation of hook_menu().
  */
-function bot_version_menu($may_cache) {
+function bot_join_menu($may_cache) {
   $items = array();
 
   if ($may_cache) {
@@ -27,8 +27,4 @@ function bot_version_menu($may_cache) {
   }
 
   return $items;
-}
-
-function bot_version_irc_msg_join($data) {
-  //bot_message('CHANNEL', $data->channel, $data->nick.': you just joined!');
 }
