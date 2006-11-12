@@ -1,4 +1,4 @@
-// $Id: README.txt,v 1.2 2006/11/11 04:39:28 morbus Exp $
+// $Id: README.txt,v 1.3 2006/11/12 17:01:35 morbus Exp $
 
 CONTENTS OF THIS FILE
 ---------------------
@@ -37,11 +37,11 @@ entails running the bot through a shell NOT through web browser access.
 
 3. Enable the module and configure admin/settings/bot.
 
-4. Inside the bot/ directory is a run_bot.php script which is a wrapper
+4. Inside the bot/ directory is a bot_start.php script which is a wrapper
    around Drupal and the IRC network libraries. To run this script, you'll
    need to open up a shell to that directory and use the following command:
 
-     php run_bot.php --root /path/to/drupal/root --url http://www.example.com
+     php bot_start.php --root /path/to/drupal/root --url http://www.example.com
 
    --root refers to the full path to your Drupal installation directory
    and allows you to execute run_bot.php without moving it to the root
