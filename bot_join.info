@@ -1,0 +1,5 @@
+; $Id: bot_join.info,v 1.1 2006/11/12 17:01:25 morbus Exp $
+name = Bot Join
+package = Bot
+dependencies = bot
+description = Allows IRC commands to control the bot's channel list.
