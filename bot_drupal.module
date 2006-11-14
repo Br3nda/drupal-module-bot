@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_drupal.module,v 1.3 2006/11/14 01:42:09 morbus Exp $
+// $Id: bot_drupal.module,v 1.4 2006/11/14 01:43:24 morbus Exp $
 
 /**
  * @file
@@ -66,6 +66,6 @@ function bot_drupal_irc_msg_channel($data, $from_query = 0) {
  * All responses are available via a query.
  */
 function bot_drupal_irc_msg_query($data) {
-  bot_irc_msg_channel($data, 1);
+  bot_drupal_irc_msg_channel($data, 1);
 }
 
