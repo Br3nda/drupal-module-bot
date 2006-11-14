@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_drupal.module,v 1.2 2006/11/14 05:00:38 morbus Exp $
+// $Id: bot_drupal.module,v 1.3 2006/11/14 17:53:29 morbus Exp $
 
 /**
  * @file
@@ -40,7 +40,6 @@ function bot_drupal_menu($may_cache) {
  *   Boolean; whether this was a queried request.
  */
 function bot_drupal_irc_msg_channel($data, $from_query = 0) {
-  $addressed = $from_query ? '' : variable_get('bot_nickname', 'bot_module') .':? ';
   $to = $from_query ? $data->nick : $data->channel;
   $message = $data->message;
 
