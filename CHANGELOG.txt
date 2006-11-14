@@ -1,6 +1,7 @@
-// $Id: CHANGELOG.txt,v 1.6 2006/11/14 05:00:38 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.7 2006/11/14 19:18:00 morbus Exp $
 
 2006, November:
+ * bot_agotchi.module added; botsnacks, greetings, personality.
  * bot_drupal: URLs are remembered and counted in the database now.
  * Shipped plugins moved to their own directories for less clutter.
  * Help interface added; module developers, please see README.txt.
