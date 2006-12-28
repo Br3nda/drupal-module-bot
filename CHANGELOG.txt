@@ -1,9 +1,10 @@
-// $Id: CHANGELOG.txt,v 1.12 2006/11/18 04:06:42 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.13 2006/12/28 04:02:24 morbus Exp $
 
 Todo:
  * bring in Frando's logger as a Seen-er too.
  * add that hook that allows bot responses to be logged.
-
+ * find Druplicon's "anyone?", "only me" and add to botagotchi.
+ 
 2006, November:
  * bot_drupal: "Bot Drupal URLs" renamed to just "Drupal URLs".
  * bot: bot/ URL now exists and displays connection/feature details.
