@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_agotchi.module,v 1.4 2006/11/18 03:32:24 morbus Exp $
+// $Id: bot_agotchi.module,v 1.4.2.1 2007/01/05 03:30:40 morbus Exp $
 
 /**
  * @file
@@ -144,7 +144,7 @@ function _bot_agotchi_greeting_responses() {
     'hi',
     'hey',
     'hola',
-    'hello', 
+    'hello',
     'salut',
     'eh oh',
     'niihau',
