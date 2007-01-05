@@ -1,0 +1,5 @@
+; $Id: bot_seen.info,v 1.1.2.1 2007/01/05 03:32:23 morbus Exp $
+name = Bot Seen
+package = Bot
+dependencies = bot
+description = Enables users to find out the last time a channel member was active.
