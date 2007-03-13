@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_agotchi.module,v 1.4.2.2 2007/02/08 18:54:57 morbus Exp $
+// $Id: bot_agotchi.module,v 1.4.2.3 2007/03/13 02:30:41 morbus Exp $
 
 /**
  * @file
@@ -75,7 +75,7 @@ function bot_agotchi_irc_msg_channel($data, $from_query = FALSE) {
   }
 
   // we've been thanked, so you're welcome 'em.
-  if (preg_match("/^${addressed}thank(s| you)/i", $data->message)) {
+  if (preg_match("/^($addressed)thank(s| you)/i", $data->message)) {
     $thankful_responses = explode("\n", variable_get('bot_agotchi_thankful_responses', _bot_agotchi_thankful_responses()));
     $thankful_response_key = array_rand($thankful_responses); // of all our thankful responses, get a random one.
     bot_message($to, strtr($thankful_responses[$thankful_response_key], $substitutions));
