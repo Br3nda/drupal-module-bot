@@ -1,5 +1,5 @@
 <?php
-// $Id: bot.module,v 1.9.2.3 2007/02/08 18:54:57 morbus Exp $
+// $Id: bot.module,v 1.9.2.4 2007/06/19 12:34:34 morbus Exp $
 
 /**
  * @file
@@ -50,6 +50,16 @@ function bot_menu($may_cache) {
   }
 
   return $items;
+}
+
+/**
+ * Every five minutes, clear out some of the Drupal caches that are normally
+ * handled via page loads (which we never have as a forever-running process).
+ */
+function bot_irc_bot_cron() {
+  // recreates the variable cache.
+  variable_set('bot_cache_cleared', time());
+  $GLOBALS['conf'] = variable_init();
 }
 
 /**
