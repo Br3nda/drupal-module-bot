@@ -1,8 +1,7 @@
-// $Id: CHANGELOG.txt,v 1.14.2.6 2007/06/27 20:51:00 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.7 2007/06/27 20:55:24 morbus Exp $
 
 Bot 5.x-1.0, 2007-??-??
 -----------------------
- * bot: the db is now pinged regularly to prevent connect timeouts.
  * bot_drupal: better handling of improper Doxygen summaries.
  * bot_drupal from Bdragon: integrate with api.module.
  * bot_factoid.module added; an infobot clone with all the fixins.

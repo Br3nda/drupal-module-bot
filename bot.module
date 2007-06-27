@@ -1,5 +1,5 @@
 <?php
-// $Id: bot.module,v 1.9.2.6 2007/06/27 20:51:00 morbus Exp $
+// $Id: bot.module,v 1.9.2.7 2007/06/27 20:55:24 morbus Exp $
 
 /**
  * @file
@@ -60,9 +60,6 @@ function bot_irc_bot_cron() {
   // recreates the variable cache.
   variable_set('bot_cache_cleared', time());
   $GLOBALS['conf'] = variable_init();
-
-  db_query('SELECT 1'); // database keepalive.
-  // necessary for idle channels with infrequent traffic.
 }
 
 /**
