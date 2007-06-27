@@ -1,0 +1,5 @@
+; $Id: bot_factoid.info,v 1.1.2.1 2007/06/27 00:10:46 morbus Exp $
+name = Bot Factoid
+package = Bot
+dependencies = bot
+description = "Enables the setting and retrieval of facts."
