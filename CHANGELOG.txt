@@ -1,8 +1,8 @@
-// $Id: CHANGELOG.txt,v 1.14.2.4 2007/06/27 02:41:42 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.5 2007/06/27 03:22:12 morbus Exp $
 
 Bot 5.x-1.0, 2007-??-??
 -----------------------
- * bot_drupal, from Bdragon: integrate with api.module.
+ * bot_drupal from Bdragon: integrate with api.module.
  * bot_factoid.module added; an infobot clone with all the fixins.
  * hook_irc_bot_cron() now exists and runs every five minutes.
  * #136856 and #136870 from Shiny: various PostgreSQL quote fixes.
