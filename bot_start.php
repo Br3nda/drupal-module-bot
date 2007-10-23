@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_start.php,v 1.2.2.2 2007/06/28 19:47:37 morbus Exp $
+// $Id: bot_start.php,v 1.2.2.3 2007/10/23 17:13:19 morbus Exp $
 
 /*
  * @file
@@ -38,6 +38,9 @@ while ($param = array_shift($_SERVER['argv'])) {
 require_once './includes/bootstrap.inc';
 drupal_bootstrap(DRUPAL_BOOTSTRAP_FULL);
 require_once('Net/SmartIRC.php');
+
+// prevent MySQL timeouts on slow channels.
+db_query('SET SESSION wait_timeout = %d', 24*60*60);
 
 // initialize the bot with some sane defaults.
 global $irc; $bot = new drupal_wrapper(); $irc = new Net_SmartIRC();
