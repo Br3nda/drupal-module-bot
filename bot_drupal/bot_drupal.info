@@ -1,5 +1,0 @@
-; $Id: bot_drupal.info,v 1.2.2.1 2007/01/05 00:58:25 morbus Exp $
-name = Bot Drupal
-package = Bot
-dependencies = bot
-description = Enables various Drupal developer friendly actions.

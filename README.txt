@@ -1,4 +1,4 @@
-// $Id: README.txt,v 1.6.2.3 2007/06/27 00:03:14 morbus Exp $
+// $Id: README.txt,v 1.6.2.4 2007/10/23 16:29:49 morbus Exp $
 
 CONTENTS OF THIS FILE
 ---------------------
@@ -6,7 +6,6 @@ CONTENTS OF THIS FILE
  * Introduction
  * Installation
  * IRC API Hooks
- * Cache Warning
  * Design Decisions
 
 
