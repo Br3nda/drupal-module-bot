@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_factoid.install,v 1.1.2.1 2007/06/27 00:10:46 morbus Exp $
+// $Id: bot_factoid.install,v 1.1.2.2 2007/11/09 16:37:09 morbus Exp $
 
 /**
  * Implementation of hook_install().
@@ -17,7 +17,7 @@ function bot_factoid_install() {
       break;
     case 'pgsql':
       db_query("CREATE TABLE {bot_factoid} (
-        subject text NOT NULL default '',
+        subject varchar(255) NOT NULL default '',
         is_are varchar(3) NOT NULL default '',
         statement text NOT NULL default '',
         KEY (subject)
