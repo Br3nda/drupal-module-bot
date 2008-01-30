@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_seen.install,v 1.1.2.2 2007/11/09 14:35:12 morbus Exp $
+// $Id: bot_seen.install,v 1.1.2.3 2008/01/30 13:50:51 morbus Exp $
 
 /**
  * Implementation of hook_install().
@@ -26,4 +26,11 @@ function bot_seen_install() {
       )");
       break;
   }
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function bot_seen_uninstall() {
+  db_query('DROP TABLE {bot_seen}');
 }

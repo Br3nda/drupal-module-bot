@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_factoid.install,v 1.1.2.2 2007/11/09 16:37:09 morbus Exp $
+// $Id: bot_factoid.install,v 1.1.2.3 2008/01/30 13:50:51 morbus Exp $
 
 /**
  * Implementation of hook_install().
@@ -24,4 +24,12 @@ function bot_factoid_install() {
       )");
       break;
   }
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function bot_factoid_uninstall() {
+  db_query('DROP TABLE {bot_factoid}');
+  variable_del('bot_factoid_stopwords');
 }
