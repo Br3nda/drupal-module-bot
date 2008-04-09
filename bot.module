@@ -1,5 +1,5 @@
 <?php
-// $Id: bot.module,v 1.9.2.9.2.2 2008/04/09 00:50:39 morbus Exp $
+// $Id: bot.module,v 1.9.2.9.2.3 2008/04/09 01:02:02 morbus Exp $
 
 /**
  * @file
@@ -155,8 +155,6 @@ function bot_overview() {
  * Configures the bot framework; system_settings_form().
  */
 function bot_settings() {
-  $form = array();
-
   $form['bot_server'] = array(
     '#default_value' => variable_get('bot_server', 'irc.freenode.net'),
     '#description'   => t('Enter the IRC server the bot will connect to.'),
