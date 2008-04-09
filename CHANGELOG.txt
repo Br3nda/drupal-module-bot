@@ -1,6 +1,10 @@
-. // $Id: CHANGELOG.txt,v 1.14.2.16 2008/02/06 18:08:59 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.16.2.1 2008/04/09 00:42:33 morbus Exp $
 
-Bot 5.x-1.0, 2008-??-??
+Bot 6.x-1.x, 2008-??-??
+-----------------------
+
+
+Bot 5.x-1.0, 2008-04-08
 -----------------------
  * #193209: an attempt at solving seen pings has been implemented.
  * #155045: bot_seen no longer fails with "asd%" on fuzzy matching.
