@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_factoid.install,v 1.1.2.3.2.1 2008/04/09 02:02:32 morbus Exp $
+// $Id: bot_factoid.install,v 1.1.2.3.2.2 2008/04/25 01:29:03 morbus Exp $
 
 /**
  * Implementation of hook_schema().
@@ -30,7 +30,7 @@ function bot_factoid_schema() {
         'type'        => 'text',
       ),
     ),
-    'primary key' => array('subject'),
+    'key' => array('subject'),
   );
 
   return $schema;
