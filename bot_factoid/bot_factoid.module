@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_factoid.module,v 1.1.2.6.2.2 2008/04/25 01:29:03 morbus Exp $
+// $Id: bot_factoid.module,v 1.1.2.6.2.3 2008/04/26 01:32:31 morbus Exp $
 
 /**
  * @file
@@ -227,7 +227,6 @@ function bot_factoid_save($string) {
     // if "also" starts the statement, we're adding.
     if (preg_match("/^also\s+/i", $statement)) {
       $statement = preg_replace("/^also\s+/i", '', $statement);
-print $statement;
     } else { bot_factoid_delete($subject); }
 
     db_query("INSERT INTO {bot_factoid} SET subject = '%s', is_are = '%s', statement = '%s'", $subject, $is_are, $statement);
