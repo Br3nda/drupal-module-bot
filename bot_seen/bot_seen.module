@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_seen.module,v 1.1.2.12 2008/02/07 00:32:27 morbus Exp $
+// $Id: bot_seen.module,v 1.1.2.12.2.1 2008/05/02 01:21:17 morbus Exp $
 
 /**
  * @file
@@ -9,8 +9,8 @@
 /**
  * Implementation of hook_help().
  */
-function bot_seen_help($section) {
-  switch ($section) {
+function bot_seen_help($path, $arg) {
+  switch ($path) {
     case 'irc:features':
       return array(t('Seen'));
     case 'irc:features#seen':

@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_factoid.install,v 1.1.2.3.2.2 2008/04/25 01:29:03 morbus Exp $
+// $Id: bot_factoid.install,v 1.1.2.3.2.3 2008/05/02 01:21:17 morbus Exp $
 
 /**
  * Implementation of hook_schema().
@@ -26,7 +26,6 @@ function bot_factoid_schema() {
         'default'     => '',
         'description' => t('The factoid defined for this subject.'),
         'not null'    => TRUE,
-        'size'        => 'medium',
         'type'        => 'text',
       ),
     ),
