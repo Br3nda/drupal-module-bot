@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_agotchi.module,v 1.4.2.5.2.2 2008/04/25 01:29:03 morbus Exp $
+// $Id: bot_agotchi.module,v 1.4.2.5.2.3 2008/06/23 01:39:28 morbus Exp $
 
 /**
  * @file
@@ -20,7 +20,7 @@ function bot_agotchi_help($path, $arg) {
     case 'irc:features#botagotchi':
       return t('Proper care and feeding lets your botagotchi grow and be happy!');
     case 'admin/settings/bot/agotchi':
-      return '<p>'. t('Configure your botagotchi with these settings.'). '</p>';
+      return '<p>' . t('Configure your botagotchi with these settings.') . '</p>';
   }
 }
 
