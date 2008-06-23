@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_factoid.module,v 1.1.2.6.2.6 2008/06/23 17:11:57 morbus Exp $
+// $Id: bot_factoid.module,v 1.1.2.6.2.7 2008/06/23 17:30:41 morbus Exp $
 
 /**
  * @file
@@ -75,7 +75,7 @@ function bot_factoid_overview() {
  */
 function bot_factoid_irc_msg_channel($data, $from_query = FALSE) {
   $bot_name = variable_get('bot_nickname', 'bot_module');
-  $addressed = "\s*${bot_name}[\:,-]\s*"; // bot mentioned?
+  $addressed = "\s*${bot_name}[:,-]\s*"; // bot mentioned?
   $to = $from_query ? $data->nick : $data->channel;
 
   // look for factoids to answer.
@@ -208,7 +208,7 @@ function bot_factoid_load($subject, $data = NULL) {
  */
 function bot_factoid_save($string) {
   $bot_name = variable_get('bot_nickname', 'bot_module');
-  $addressed = "\s*${bot_name}[\:,-]\s*"; // bot mentioned?
+  $addressed = "\s*${bot_name}[:,-]\s*"; // bot mentioned?
 
   // only process the string if it's one of:
   //   <Morbus> bot_module: cats are brown.
