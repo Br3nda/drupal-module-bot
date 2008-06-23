@@ -1,7 +1,8 @@
-// $Id: CHANGELOG.txt,v 1.14.2.16.2.5 2008/06/23 01:39:28 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.16.2.6 2008/06/23 17:11:57 morbus Exp $
 
 Bot 6.x-1.1, 2008-xx-xx
 -----------------------
+  * #229880: bot_factoid stopwords were case sensitive (thanks John Morahan).
   * #187137: Drupal 7 style concats, and other style fixes (thanks dmitrig01).
   * #167097: fixed undefined index and better host check (thanks czarphanguye).
   * #142812: auto reconnect and retry are now configurable (Morbus/Shiny).
