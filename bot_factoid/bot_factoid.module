@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_factoid.module,v 1.1.2.6.2.3 2008/04/26 01:32:31 morbus Exp $
+// $Id: bot_factoid.module,v 1.1.2.6.2.4 2008/06/23 01:10:40 morbus Exp $
 
 /**
  * @file
@@ -139,7 +139,7 @@ function bot_factoid_delete($subject) {
  *   perform substitutions for "!who" (the nick asking for the factoid)
  *   and "!channel" (the channel the factoid is asked in.)
  * @return $factoid
- *   An object containing 'subject' (string), 'Is_are' (string), 
+ *   An object containing 'subject' (string), 'is_are' (string),
  *   'statements' (array) and 'result' (string). The 'result' is
  *   the logical processing of the individual parts and should be
  *   ready for sending.
