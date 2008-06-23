@@ -1,7 +1,8 @@
-// $Id: CHANGELOG.txt,v 1.14.2.16.2.8 2008/06/23 17:52:23 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.16.2.9 2008/06/23 19:06:14 morbus Exp $
 
 Bot 6.x-1.1, 2008-xx-xx
 -----------------------
+  * #267560: OS-specific newlines broke comparisons (thanks Gurpartap Singh).
   * #245610: bot_agotchi greeting triggers now customizable (thanks Alan Evans).
   * #184032: ignore improper hook_help implementations (thanks John Morahan).
   * #229880: bot_factoid stopwords were case sensitive (thanks John Morahan).
