@@ -1,7 +1,8 @@
-// $Id: CHANGELOG.txt,v 1.14.2.16.2.12 2008/06/27 15:47:09 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.16.2.13 2008/06/27 17:06:29 morbus Exp $
 
 Bot 6.x-1.1, 2008-xx-xx
 -----------------------
+  * #190825: Get URL to current logged discussion with "BOTNAME: log pointer?"
   * bot_name_regexp() now exists for matching inside a regular expression.
     - #117876: if bot has a nick clash, it now responds to both nicks.
     - #184015: bot name with non-word characters failed regexp addressing.
