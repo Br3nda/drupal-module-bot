@@ -1,10 +1,10 @@
-// $Id: CHANGELOG.txt,v 1.14.2.16.2.16 2008/07/15 00:08:21 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.16.2.17 2008/07/15 00:16:06 morbus Exp $
 
 Bot 6.x-1.1, 2008-xx-xx
 -----------------------
   * #218577: bot_tell.module added (thanks Rob Loach). Additions/changes:
     - pending message queue now exists to remove SELECT on every message.
-    - received messages now use format_interval(), not a static date.
+    - received messages use format_interval(), not a date (thanks litwol).
   * bot_factoid: PM a factoid with "BOTNAME: tell <who> about <factoid>".
   * #190825: Get URL to current logged discussion with "BOTNAME: log pointer?"
   * bot_name_regexp() now exists for matching inside a regular expression.
