@@ -1,6 +1,6 @@
-// $Id: CHANGELOG.txt,v 1.14.2.16.2.17 2008/07/15 00:16:06 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.16.2.18 2009/02/05 01:12:05 morbus Exp $
 
-Bot 6.x-1.1, 2008-xx-xx
+Bot 6.x-1.1, 2009-xx-xx
 -----------------------
   * #218577: bot_tell.module added (thanks Rob Loach). Additions/changes:
     - pending message queue now exists to remove SELECT on every message.
