@@ -1,7 +1,9 @@
-// $Id: CHANGELOG.txt,v 1.14.2.16.2.26 2009/02/06 17:04:09 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.16.2.27 2009/02/06 17:44:31 morbus Exp $
 
 Bot 6.x-1.1, 2009-xx-xx
 -----------------------
+  * bot_seen ping prevention matched inside strings; now only word boundaries.
+  * #284666: We now use preg_quote() for various nickname escaping.
   * #349245: bot_tell doesn't consume username whitespace (thanks drewish).
   * #356003: bot_tell sorts queued messages by oldest first (thanks litwol).
   * #343245: Better regex for usernames like betz--; supports betz---- now.
