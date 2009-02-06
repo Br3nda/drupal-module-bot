@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_log.module,v 1.1.2.7.2.4 2009/02/05 01:12:05 morbus Exp $
+// $Id: bot_log.module,v 1.1.2.7.2.5 2009/02/06 01:07:32 morbus Exp $
 
 /**
  * @file
@@ -210,7 +210,7 @@ function bot_log_insert($type, $channel, $nick, $message) {
  * Displays either an overview of all channels, or a specific channel's day.
  *
  * @param $channel
- *   The channel (without #, since this commonly comes from URLs).
+ *   The channel (without the first #, since this commonly comes from URLs).
  * @param $day
  *   The date to display, in YYYY-MM-DD format. Defaults to today.
  * @return $html
