@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_project.module,v 1.1.2.6.2.5 2009/02/05 01:12:06 morbus Exp $
+// $Id: bot_project.module,v 1.1.2.6.2.6 2009/02/06 01:59:11 morbus Exp $
 
 /**
  * @file
@@ -133,7 +133,7 @@ function bot_project_irc_msg_channel($data, $from_query = FALSE) {
         preg_match('/<td>Component:<\/td><td>(.*)<\/td>/', $result->data, $component_match);
         preg_match('/<td>Priority:<\/td><td>(.*)<\/td>/', $result->data, $priority_match);
         preg_match('/<td>Status:<\/td><td>(.*)<\/td>/', $result->data, $status_match);
-        $message = "$url => " . decode_entities($title) . ' => ' . implode(', ', array($project_match[1], $component_match[1], $priority_match[1], $status_match[1], $count));
+        $message = "$url => " . decode_entities($title) . ' => ' . decode_entities(implode(', ', array($project_match[1], $component_match[1], $priority_match[1], $status_match[1], $count)));
       }
 
       bot_message($to, $message);
