@@ -1,7 +1,8 @@
-// $Id: CHANGELOG.txt,v 1.14.2.16.2.30 2009/03/05 14:09:36 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.16.2.31 2009/03/05 17:41:56 morbus Exp $
 
 Bot 6.x-1.x, xxxx-xx-xx
 -----------------------
+  * #362661: Attempt to GHOST and IDENTIFY on nick clashes (thanks seutje).
   * #380330: Added perms for factoids, karma, and project (thanks lut4rp).
   * #391916: bot_log needed another index for speedier table SELECTs.
 

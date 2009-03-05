@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_start.php,v 1.2.2.4.2.3 2008/06/23 01:39:28 morbus Exp $
+// $Id: bot_start.php,v 1.2.2.4.2.4 2009/03/05 17:41:56 morbus Exp $
 
 /*
  * @file
@@ -69,8 +69,7 @@ foreach ($irc_message_types as $irc_message_type) {
   $irc->registerActionhandler(constant('SMARTIRC_TYPE_' . $irc_message_type), '.*', $bot, 'invoke_irc_msg_' . strtolower($irc_message_type));
 }
 
-// set up a five minute timer similar to Drupal's hook_cron(). this
-// is primarily used in the shipped code to clear cached data.
+// set up a five minute timer similar to Drupal's hook_cron().
 $irc->registerTimehandler(300000, $bot, 'invoke_irc_bot_cron');
 
 // connect and begin listening.
