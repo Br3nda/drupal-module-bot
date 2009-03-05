@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_factoid.module,v 1.1.2.6.2.15 2009/02/06 01:07:31 morbus Exp $
+// $Id: bot_factoid.module,v 1.1.2.6.2.16 2009/03/05 14:09:36 morbus Exp $
 
 /**
  * @file
@@ -27,7 +27,7 @@ function bot_factoid_help($path, $arg) {
  */
 function bot_factoid_menu() {
   $items['bot/factoid'] = array(
-    'access arguments'  => array('access content'),
+    'access arguments'  => array('access bot factoids'),
     'description'       => "Browse all the factoids the bot knows about.",
     'page callback'     => 'bot_factoid_overview',
     'title'             => 'Factoids',
@@ -41,6 +41,13 @@ function bot_factoid_menu() {
   );
 
   return $items;
+}
+
+/**
+ * Implementation of hook_perm().
+ */
+function bot_factoid_perm() {
+  return array('access bot factoids');
 }
 
 /**

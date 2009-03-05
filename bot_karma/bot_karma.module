@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_karma.module,v 1.1.2.5 2009/02/06 02:28:48 morbus Exp $
+// $Id: bot_karma.module,v 1.1.2.6 2009/03/05 14:09:36 morbus Exp $
 
 /**
  * @file
@@ -27,7 +27,7 @@ function bot_karma_help($section) {
  */
 function bot_karma_menu() {
   $items['bot/karma'] = array(
-    'access arguments'  => array('access content'),
+    'access arguments'  => array('access bot karma scores'),
     'description'       => 'View the highest and lowest karma scores earned from IRC.',
     'page callback'     => 'bot_karma_overview',
     'title'             => 'Karma',
@@ -41,6 +41,13 @@ function bot_karma_menu() {
   );
 
   return $items;
+}
+
+/**
+ * Implementation of hook_perm().
+ */
+function bot_karma_perm() {
+  return array('access bot karma scores');
 }
 
 /**

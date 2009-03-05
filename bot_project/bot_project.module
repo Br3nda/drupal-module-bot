@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_project.module,v 1.1.2.6.2.6 2009/02/06 01:59:11 morbus Exp $
+// $Id: bot_project.module,v 1.1.2.6.2.7 2009/03/05 14:09:36 morbus Exp $
 
 /**
  * @file
@@ -33,7 +33,7 @@ function bot_project_help($path, $arg) {
  */
 function bot_project_menu() {
   $items['bot/project_urls'] = array(
-    'access arguments'  => array('access content'),
+    'access arguments'  => array('access bot project URLs'),
     'description'       => "View the most recent and popular URLs mentioned in the IRC channels.",
     'page callback'     => 'bot_project_urls_overview',
     'title'             => 'Project URLs',
@@ -47,6 +47,13 @@ function bot_project_menu() {
   );
 
   return $items;
+}
+
+/**
+ * Implementation of hook_perm().
+ */
+function bot_project_perm() {
+  return array('access bot project URLs');
 }
 
 /**
