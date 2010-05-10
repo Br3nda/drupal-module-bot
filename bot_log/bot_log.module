@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_log.module,v 1.1.2.7.2.7 2009/03/18 16:47:30 morbus Exp $
+// $Id: bot_log.module,v 1.1.2.7.2.8 2010/05/10 12:37:19 morbus Exp $
 
 /**
  * @file
@@ -403,13 +403,13 @@ function bot_log_settings(){
   // we don't use checkboxes because it doesn't want
   // to accept an array key name of "#channel".
   $form['bot_log_channels'] = array (
-    '#default_value' => variable_get('bot_log_channels', array()),
-    '#description'   => t('Select the channels to log.'),
-    '#multiple'      => TRUE,
-    '#options'       => $channel_options,
-    '#size'          => 10,
-    '#type'          => 'select',
-    '#title'         => t('IRC channels'),
+    '#default_value'  => variable_get('bot_log_channels', array()),
+    '#description'    => t('Select the channels to log.'),
+    '#multiple'       => TRUE,
+    '#options'        => $channel_options,
+    '#size'           => 10,
+    '#type'           => 'select',
+    '#title'          => t('IRC channels'),
   );
 
   // @todo if we've been logging a channel, but no longer join it, the logs
