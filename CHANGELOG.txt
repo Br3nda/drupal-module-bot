@@ -1,7 +1,8 @@
-// $Id: CHANGELOG.txt,v 1.14.2.16.2.37 2010/05/10 12:51:54 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.16.2.38 2010/05/10 14:30:26 morbus Exp $
 
 Bot 6.x-1.x, xxxx-xx-xx
 -----------------------
+  * If a channel bans us, it is now permanently removed from the join list.
   * #648606: Chinese "ni hao" is mis-spelled in greetings (thanks JohnAlbin).
   * Advanced/debugging option added: whether to use real sockets or not.
   * bot_project: fixed broken Trac metadata from ticket/revision exports.
