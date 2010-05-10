@@ -1,5 +1,5 @@
 <?php
-// $Id: bot.module,v 1.9.2.9.2.15 2009/05/08 17:13:16 morbus Exp $
+// $Id: bot.module,v 1.9.2.9.2.16 2010/05/10 12:41:24 morbus Exp $
 
 /**
  * @file
@@ -322,6 +322,12 @@ function bot_settings() {
   $form['bot_connection']['bot_auto_reconnect'] = array(
     '#default_value'  => variable_get('bot_auto_reconnect', 1),
     '#title'          => t('Reconnect to the IRC server if disconnected'),
+    '#type'           => 'checkbox',
+  );
+  $form['bot_connection']['bot_real_sockets'] = array(
+    '#default_value'  => variable_get('bot_real_sockets', 1), // prefer socket_connect.
+    '#description'    => t('If the bot is having connection problems, try disabling this to use fsockopen() instead.'),
+    '#title'          => t('Use real sockets for IRC server connection'),
     '#type'           => 'checkbox',
   );
   $form['bot_connection']['bot_debugging'] = array(
