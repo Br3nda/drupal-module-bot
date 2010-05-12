@@ -1,9 +1,9 @@
-// $Id: CHANGELOG.txt,v 1.14.2.16.2.41 2010/05/11 15:54:03 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.16.2.42 2010/05/12 17:01:15 morbus Exp $
 
 Bot 6.x-1.x, xxxx-xx-xx
 -----------------------
-  * bot_potpourri.module added (thanks, ae1). For more information:
-    - BOTNAME: help Timezones?
+  * bot_tell.module can now remind you of things: "BOTNAME: help Reminders?"
+  * bot_potpourri.module added (thanks, ae1): "BOTNAME: help Timezones?"
   * bot_aggregator.module added (thanks cwgordon7/snufkin). Additions:
     - Configuration has been moved to the feed config form, not our own.
     - Different feeds can now be sent to different channels, based on config.

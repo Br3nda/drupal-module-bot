@@ -1,5 +1,5 @@
 <?php
-// $Id: bot_aggregator.module,v 1.1.2.1 2010/05/10 17:53:28 morbus Exp $
+// $Id: bot_aggregator.module,v 1.1.2.2 2010/05/12 17:01:15 morbus Exp $
 
 /**
  * @file
@@ -51,7 +51,7 @@ function bot_aggregator_irc_bot_cron_fastest() {
 
   while ($result = db_fetch_object($results)) {
     if (isset($channels[$result->fid])) {
-      $message = t('!feed => !title => !link',array(
+      $message = t('!feed => !title => !link', array(
         '!feed'   => decode_entities(strip_tags($result->feed_title)),
         '!title'  => decode_entities(strip_tags($result->title)),
         '!link'   => decode_entities(strip_tags($result->link)),
