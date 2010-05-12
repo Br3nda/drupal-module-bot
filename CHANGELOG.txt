@@ -1,7 +1,8 @@
-// $Id: CHANGELOG.txt,v 1.14.2.16.2.42 2010/05/12 17:01:15 morbus Exp $
+// $Id: CHANGELOG.txt,v 1.14.2.16.2.43 2010/05/12 22:00:44 morbus Exp $
 
 Bot 6.x-1.x, xxxx-xx-xx
 -----------------------
+  * #477596: Fixed regexp error in bot_seen.module (thanks Gurpartap).
   * bot_tell.module can now remind you of things: "BOTNAME: help Reminders?"
   * bot_potpourri.module added (thanks, ae1): "BOTNAME: help Timezones?"
   * bot_aggregator.module added (thanks cwgordon7/snufkin). Additions:
